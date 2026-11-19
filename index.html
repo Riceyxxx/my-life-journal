@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Life Journal</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Kiwi+Maru:wght@500&family=Zen+Maru+Gothic:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <h1>My Life Journal</h1>
+      <p>わたしの暮らし手帳</p>
+      <nav>
+        <a href="#diary">日記</a>
+        <a href="#sport">運動</a>
+        <a href="#calendar">ふりかえり</a>
+        <a href="#photo">写真</a>
+      </nav>
+    </header>
+
+    <main>
+      <section id="diary">
+        <h2>今日の日記</h2>
+
+        <form id="diary-form">
+          <label for="diary-mood">今日の気分</label>
+          <select id="diary-mood">
+            <option value="happy">元気</option>
+            <option value="normal">ふつう</option>
+            <option value="tired">つかれた</option>
+            <option value="sad">かなしい</option>
+          </select>
+
+          <label for="diary-text">今日あったこと</label>
+          <textarea
+            id="diary-text"
+            rows="4"
+            placeholder="カフェに行った、本を読んだ…"
+          ></textarea>
+
+          <button type="submit">日記を保存</button>
+        </form>
+        <ul id="diary-list" class="diary-list"></ul>
+      </section>
+
+      <section id="sport">
+        <h2>運動記録</h2>
+      </section>
+
+      <section id="calendar">
+        <h2>カレンダー</h2>
+      </section>
+
+      <section id="photo">
+        <h2>フォトウォール</h2>
+      </section>
+    </main>
+
+    <script src="app.js"></script>
+  </body>
+</html>
